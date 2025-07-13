@@ -1,11 +1,11 @@
 # payment method unique
 # payment method with city, product category (bar chart)
 
-# import dash
-# import pandas as pd
-# import plotly.express as px
-# from dash import dcc, html, Input, Output, callback
-# import dash_bootstrap_components as dbc
+import dash
+import pandas as pd
+import plotly.express as px
+from dash import dcc, html, Input, Output, callback
+import dash_bootstrap_components as dbc
 
 # dash.register_page(__name__, path="/payment-method")
 
