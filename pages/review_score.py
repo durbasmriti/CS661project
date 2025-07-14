@@ -330,7 +330,7 @@ def update_review_trend(_):
     top_categories = df["product_category_name_english"].value_counts().head(5).index
     filtered = df[df["product_category_name_english"].isin(top_categories)]
     trend_df = (
-        filtered.groupby([pd.Grouper(key="review_creation_date", freq="M"), "product_category_name_english"])
+        filtered.groupby([pd.Grouper(key="review_creation_date", freq="ME"), "product_category_name_english"])
         ["review_score"]
         .mean()
         .reset_index()
