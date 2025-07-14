@@ -14,6 +14,7 @@ ecommerce-sales-dashboard/
 ├── app.py                    # Main Dash application file
 ├── README.md                 # Project documentation
 └── requirements.txt          # List of required Python packages
+|__ preprocessing_olist.ipynb
 ```
 
 ## Setup Instructions
@@ -52,11 +53,3 @@ ecommerce-sales-dashboard/
 
 - Modify `assets/styles.css` to change the appearance of the dashboard, including colors, fonts, and layout.
 - You can add more data to the `data/` folder and update `app.py` to use a different dataset if needed.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
-
-## License
-
-This project
