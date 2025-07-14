@@ -29,6 +29,7 @@ sidebar = html.Div(
                 dbc.NavLink("Price and Freight", href="/price-frieght", active="exact"),
                 dbc.NavLink("Product Metrix Correlation", href="/product-metrix", active="exact"),
                 dbc.NavLink("Top Products", href="/top-products", active="exact"),
+                dbc.NavLink("New vs Repeat Customers", href="/new-vs-repeat", id="nav-new-vs-repeat", active="exact"),
             ],
             vertical=True,
             pills=True,
