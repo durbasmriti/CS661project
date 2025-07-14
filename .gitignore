@@ -4,3 +4,5 @@ __pycache__/
 .vscode/
 .ipynb_checkpoints/
 .env
+data/Indian_States.txt
+data/india_state.geojson
