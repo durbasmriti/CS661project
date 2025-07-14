@@ -3,7 +3,7 @@ from dash import html, dcc
 import pandas as pd
 import plotly.express as px
 
-dash.register_page(_name_, path="/new-vs-repeat", name="New vs Repeat Customers")
+dash.register_page(__name__, path="/new-vs-repeat", name="New vs Repeat Customers")
 
 # Load data
 df = pd.read_csv("data/E-commerce.csv")
