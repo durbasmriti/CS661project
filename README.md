@@ -8,12 +8,34 @@ The E-commerce Sales Dashboard is an interactive web application built using Das
 ```
 ecommerce-sales-dashboard/
 ├── assets/
-│   └── styles.css            # CSS styles for the dashboard
+│ ├── ecommerce_img.png
+│ ├── image.png
+│ └── styles.css
+│
 ├── data/
-│   └── Sample - Superstore.csv  # Dataset used for analysis
-├── app.py                    # Main Dash application file
-├── README.md                 # Project documentation
-└── requirements.txt          # List of required Python packages
+│ ├── E-commerse.csv
+│ ├── Rating.csv
+│ └── states_india.geojson
+│
+├── pages/
+│ ├── init.py
+│ ├── delivery_analysis.py
+│ ├── home.py
+│ ├── monthlyOrder.py
+│ ├── new_vs_repeat.py
+│ ├── order_status.py
+│ ├── payment.py
+│ ├── price_freight.py
+│ ├── revenue.py
+│ ├── review_score.py
+│ ├── sales.py
+│ └── top_seller_customers.py
+│
+├── .gitignore
+├── README.md
+├── app.py
+├── preprocessing_olist.ipynb
+└── requirements.txt
 ```
 
 ## Setup Instructions
@@ -50,13 +72,17 @@ ecommerce-sales-dashboard/
 
 ## Customization
 
-- Modify `assets/styles.css` to change the appearance of the dashboard, including colors, fonts, and layout.
 - You can add more data to the `data/` folder and update `app.py` to use a different dataset if needed.
 
-## Contributing
+  Team Members:
+A Shri Vaishnavi (230002)
+Durbasmriti Saha (230393)
+Marka Varshitha (220634)
+Mohd Fahad (230656)
+P. Sruthi (230751)
+Pratiksha (210760)
+Priyanka (230798)
+Soham Hanmane (220418)
+Anany Dev Choudhary (220135)
 
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
-
-## License
-
-This project
+Prof Soumya Dutta, Dept. of Computer Science and Engineering
