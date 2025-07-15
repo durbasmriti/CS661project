@@ -1,28 +1,37 @@
 import dash
 from dash import dcc, html
 import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output
 
 dash.register_page(__name__, path="/")
 
 layout = html.Div(
-    style={"textAlign": "center"},
+    style={
+        "textAlign": "center",
+        "padding": "30px",
+        "backgroundColor": "#F5F5F5",
+    },
     children=[
-        # html.Img(
-        #     src="/assets/ecommerce_img.png",
-        #     style={
-        #         "background-color": "blue",
-        #         "maxWidth": "50%",
-        #         "height": "20%",
-        #         "borderRadius": "12px",
-        #         "marginBottom": "30px",
-        #         "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.2)"
-        #     }
-        # ),
-        html.H2("Welcome to the E-Commerce Sales Dashboard", style={"marginTop": "20px", "color": "#333"}),
-        html.P(
-            "Explore interactive insights into sales performance, delivery timelines, customer feedback, and much more.",
-            style={"fontSize": "18px", "maxWidth": "70%", "margin": "auto", "color": "#555"}
-        )
+        html.Div([
+            html.H2(
+                "Welcome to the E-Commerce Sales Dashboard",
+                style={
+                    "color": "#1a1a1a",
+                    "fontWeight": "bold",
+                    "fontSize": "2rem",
+                    "marginBottom": "10px"
+                }
+            ),
+            html.P(
+                "Explore interactive insights into sales performance, delivery timelines, "
+                "customer feedback, and much more. This dashboard, built using Plotly Dash, "
+                "enables intuitive exploration of Indian e-commerce metrics",
+                style={
+                    "fontSize": "24px",
+                    "color": "#444",
+                    "maxWidth": "80%",
+                    "margin": "0 auto"
+                }
+            )
+        ])
     ]
 )

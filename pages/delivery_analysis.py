@@ -5,10 +5,9 @@ import pandas as pd
 import plotly.express as px
 import json
 
-# Register page
 dash.register_page(__name__, path="/delivery-analysis", name="Delivery Analysis")
 
-# Load data
+
 df = pd.read_csv("data/E-commerse.csv")
 df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'], errors='coerce')
 df['order_delivered_customer_date'] = pd.to_datetime(df['order_delivered_customer_date'], errors='coerce')

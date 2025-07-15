@@ -10,7 +10,6 @@ import dash_bootstrap_components as dbc
 app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "E-Commerce Dashboard"
 
-# Sidebar (collapsible)
 sidebar = html.Div(
     [
         html.H2("Plots", className="text-white p-3"),
@@ -23,15 +22,12 @@ sidebar = html.Div(
                 dbc.NavLink("Delivery Analysis", href="/delivery-analysis", active="exact"),
                 dbc.NavLink("Monthly Order", href="/monthly-order", active="exact"),
                 dbc.NavLink("Payment Method", href="/payment-method", active="exact"),
-                dbc.NavLink("Revenue by City", href="/revenue-city", active="exact"),
+                dbc.NavLink("Revenue", href="/revenue-city", active="exact"),
                 dbc.NavLink("Review Score", href="/review-score", active="exact"),
                 dbc.NavLink("Top Sellers", href="/top-sellers", active="exact"),
                 dbc.NavLink("Price and Freight", href="/price-frieght", active="exact"),
-                dbc.NavLink("Product Metrix Correlation", href="/product-metrix", active="exact"),
-                dbc.NavLink("Top Products", href="/top-products", active="exact"),
                 dbc.NavLink("New vs Repeat Customers", href="/new-vs-repeat", id="nav-new-vs-repeat", active="exact"),
-                dbc.NavLink("Top Sellers", href="/top-seller", active="exact"),
-                dbc.NavLink("Price vs Freight", href="/price-frieght", active="exact"),
+
             ],
             vertical=True,
             pills=True,
@@ -52,7 +48,7 @@ sidebar = html.Div(
     },
 )
 
-# Top Navbar with Toggle Button
+# Navbar with Toggle Button
 navbar = dbc.Navbar(
     dbc.Container(
         [
@@ -78,7 +74,7 @@ app.layout = html.Div([
     page_wrapper
 ])
 
-# Toggle sidebar visibility
+
 @app.callback(
     Output("sidebar-container", "style"),
     Output("page-wrapper", "style"),
